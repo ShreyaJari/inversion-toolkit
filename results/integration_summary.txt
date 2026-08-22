@@ -1,0 +1,19 @@
+STAGE 3 (INTEGRATION) -- SUMMARY
+Geophysical-to-Geotechnical Inversion Toolkit
+
+IMPORTANT: Vs(z) profiles here are fully SYNTHETIC (physics
+stage's synthetic ground truth) -- never paired with a real
+measured CPT. Results below check INTERNAL CONSISTENCY of the
+physics-to-ML pipeline (does uncertainty propagate sensibly),
+NOT accuracy against real ground truth, since none exists for
+this synthetic case.
+
+qt(z) and fs(z) 10th-90th percentile band width (MPa), at
+representative depths, Scenario 1 (wide band, low noise) vs.
+Scenario 2 (narrow band, high noise):
+
+  Depth   5.0 m:  qt band S1=0.0000 MPa, S2= 12.28 MPa (S1 band effectively zero (near-deterministic))   |   fs band S1=0.0000 MPa, S2=0.053 MPa (S1 band effectively zero (near-deterministic))
+  Depth  15.0 m:  qt band S1=0.0000 MPa, S2=  9.88 MPa (S1 band effectively zero (near-deterministic))   |   fs band S1=0.0000 MPa, S2=0.112 MPa (S1 band effectively zero (near-deterministic))
+  Depth  25.0 m:  qt band S1=0.0000 MPa, S2=  2.11 MPa (S1 band effectively zero (near-deterministic))   |   fs band S1=0.0000 MPa, S2=0.102 MPa (S1 band effectively zero (near-deterministic))
+
+CONCLUSION: prediction uncertainty in the final geotechnical log is directly inherited from physics-stage survey quality -- a degraded survey (narrow frequency band, high noise) propagates into a wider, less confident qt/fs prediction band, demonstrating end-to-end uncertainty propagation through the full toolkit.

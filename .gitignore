@@ -1,0 +1,24 @@
+# Virtual environment
+.venv-inversion/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Raw third-party data -- not redistributed; see data/raw/*/SOURCE.txt
+# for provenance and download instructions. Figures and summary .txt
+# files in results/ ARE tracked (small, illustrative, useful without
+# re-running the pipeline).
+data/raw/*/*
+!data/raw/*/SOURCE.txt
+
+# Trained model binaries -- regenerable via src/ml/train_model.py,
+# excluded to keep repo size small. Figures and summaries are kept.
+results/models/*.joblib

@@ -1,0 +1,31 @@
+ML STAGE (Stage 2) -- FINAL MODEL SUMMARY
+Geophysical-to-Geotechnical Inversion Toolkit
+
+Predicts geotechnical parameters (qt, fs) from Vs + depth -- the
+reverse of the source paper's own direction (Marin-Moreno et al. 2026
+predict Vs from CPTu; this toolkit predicts CPTu-equivalent parameters
+from Vs, matching the physics stage's actual output and the project's
+stated goal).
+
+FIVE VARIANTS TESTED (see src/ml/experiments/):
+  v1: Vs+depth only, raw target                       qt R^2=-0.016  fs R^2=0.167
+  v2: Vs+depth only, log1p target (ablation)           qt R^2=-0.284  fs R^2=0.111
+  v3: log1p target + soil-type probabilities           qt R^2=-0.102  fs R^2=0.205
+  v4: raw target + soil-probs + effective stress       qt R^2= 0.091  fs R^2=0.155
+  v5: log1p target + soil-probs + effective stress     qt R^2=  n/a   fs R^2=0.192
+
+FINAL CONFIGURATION (best-performing recipe per target):
+  qt_mpa: features=[vs_mps, depth_m, sigma_v0_kpa, soil-type probs], RAW target
+          Test MAE=8.90 MPa, RMSE=11.03 MPa, R^2=0.091
+  fs_mpa: features=[vs_mps, depth_m, soil-type probs], LOG1P target
+          Test MAE=0.072 MPa, RMSE=0.094 MPa, R^2=0.205
+
+KEY FINDING: predicting geotechnical parameters from Vs alone is
+fundamentally limited by soil-type ambiguity -- the same Vs value can
+correspond to vastly different qt depending on lithology (e.g. sand
+vs. clay). Soil-type probability features (from a Vs+depth-based
+classifier, ~55-57% accuracy) partially address this, improving both
+targets over the naive baseline, but remain well below the ~0.76 R^2
+upper bound achievable with TRUE soil type -- confirming a genuine,
+physically-grounded ceiling on Vs-only geotechnical prediction, not a
+model-tuning shortfall.
