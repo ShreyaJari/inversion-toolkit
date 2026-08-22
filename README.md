@@ -2,6 +2,15 @@
 
 A hybrid physics + machine learning pipeline for estimating offshore geotechnical parameters from geophysical data — grounded in professional experience in geophysical inverse theory for seabed characterization.
 
+![Python](https://img.shields.io/badge/Python-3.9-blue?logo=python&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-blue?logo=xgboost&logoColor=white)
+![Optuna](https://img.shields.io/badge/Optuna-hyperparameter--tuning-orange)
+![scikit--learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
+![disba](https://img.shields.io/badge/disba-surface--wave--inversion-green)
+![SciPy](https://img.shields.io/badge/SciPy-differential--evolution-8CAAE6?logo=scipy&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-notebook-F37626?logo=jupyter&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow)
+
 ## Motivation
 
 Offshore CPT and borehole campaigns for seabed characterization are expensive and slow. This is a growing bottleneck for deep-sea mineral exploration, where terrain is often sparsely characterized geotechnically. This toolkit explores whether **geophysical data can be inverted, and subsequently used, to estimate geotechnical parameters** as a cheaper complement to direct in-situ testing.
