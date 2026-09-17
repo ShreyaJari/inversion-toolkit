@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below."
+title: "Geophysical-to-Geotechnical Inversion Toolkit"
+authors:
+  - family-names: "Jariwala"
+    given-names: "Shreya"
+    orcid: "https://orcid.org/[your ORCID iD]"
+version: "1.0.0"
+date-released: "[YYYY-MM-DD, matches your GitHub release date]"
+url: "https://github.com/ShreyaJari/[confirm exact repo slug — your Repository structure section lists geophysical-to-geotechnical-inversion-toolkit]"
+repository-code: "https://github.com/ShreyaJari/[confirm exact repo slug — your Repository structure section lists geophysical-to-geotechnical-inversion-toolkit]"
+license: MIT
+keywords:
+  - geoai
+  - remote-sensing
+  - earth-observation
+  - seismic-inversion
+  - geotechnical
+  - surface-wave-inversion
+abstract: >
+  A hybrid physics and machine learning pipeline estimating offshore
+  geotechnical parameters (cone resistance, sleeve friction) from
+  surface-wave inversion of geophysical data, quantifying inversion
+  non-uniqueness and validating predictions against a real, held-out
+  measured profile.
