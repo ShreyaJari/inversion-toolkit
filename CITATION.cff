@@ -5,9 +5,9 @@ authors:
   - family-names: "Jariwala"
     given-names: "Shreya"
 version: "1.0.0"
-date-released: "[YYYY-MM-DD, matches your GitHub release date]"
-url: "https://github.com/ShreyaJari/[confirm exact repo slug — your Repository structure section lists geophysical-to-geotechnical-inversion-toolkit]"
-repository-code: "https://github.com/ShreyaJari/[confirm exact repo slug — your Repository structure section lists geophysical-to-geotechnical-inversion-toolkit]"
+date-released: "2026-09-17"
+url: "https://github.com/ShreyaJari/inversion-toolkit
+repository-code: "https://github.com/ShreyaJari/inversion-toolkit
 license: MIT
 keywords:
   - geoai
