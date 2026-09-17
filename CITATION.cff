@@ -4,7 +4,6 @@ title: "Geophysical-to-Geotechnical Inversion Toolkit"
 authors:
   - family-names: "Jariwala"
     given-names: "Shreya"
-    orcid: "https://orcid.org/[your ORCID iD]"
 version: "1.0.0"
 date-released: "[YYYY-MM-DD, matches your GitHub release date]"
 url: "https://github.com/ShreyaJari/[confirm exact repo slug — your Repository structure section lists geophysical-to-geotechnical-inversion-toolkit]"
