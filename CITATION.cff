@@ -6,8 +6,8 @@ authors:
     given-names: "Shreya"
 version: "1.0.0"
 date-released: "2026-09-17"
-url: "https://github.com/ShreyaJari/inversion-toolkit
-repository-code: "https://github.com/ShreyaJari/inversion-toolkit
+url: "https://github.com/ShreyaJari/inversion-toolkit"
+repository-code: "https://github.com/ShreyaJari/inversion-toolkit"
 license: MIT
 keywords:
   - geoai
